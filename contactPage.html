@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    
+    <!The head section is to setup fonts and files for this project>
+    <head>
+	    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	    <title>My Website</title>
+	    <link rel ="stylesheet" href = "webby.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap" rel="stylesheet">
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+<body>
+    
+    <!The header section is for every page and is used to set up the links on the top of the page as well as the icons>
+    <section class = "sub-header">
+        <nav>
+            <a href ="webiste.html"><img src = "/Users/jasdeepsingh/Desktop/NewIcon.png"></a>
+            <div class="nav-links">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href ="homePage.html">HOME</a></li>
+                    <li><a href ="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href ="blogPage.html">BLOG</a></li>
+                    <li><a href ="resumePage.html">RESUME</a></li>
+                    <li><a href ="contactPage.html">CONTACT INFO</a></li>
+                </ul>
+            </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+                <h1>Contact Me</h1>
+    </section>
+    
+    <!The location section displays a google map of the WWU campus which is where I go to school.>
+   <section class ="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.463689916811!2d-73.95766468415512!3d40.72982137933014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259404734a513%3A0x37c45ded4a5b8a9!2sThrees%20Brewing%20Greenpoint!5e0!3m2!1sen!2sus!4v1659713466170!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <!The following section is the contact me section that gives users different ways of contacting me>
+   <section class="contact-us">
+       
+       <div class ="row">
+       <div class ="contact-col">
+       <div>
+           <span>
+           <h5>Linkdin</h5>
+           <p>Jasdeep Singh</p>
+            </span>
+        </div>
+           
+        <div>
+           <span>
+           <h5>Github</h5>
+           <p>Jae586</p>
+           </span>
+        </div>
+           
+        <div>
+           <span>
+           <h5>Email</h5>
+           <p>jasdeeps586@gmail.com</p>
+           </span>
+        </div>
+        </div>
+           
+           <div class ="contact-col">
+           <form action="form.php" method="post">
+               <input type="text" name = "name" placeholder="Enter your name" required>
+               <input type="email" name ="email" placeholder="Enter your email" required>
+               <input type="text" name ="subject" placeholder="Enter your sunject" required>
+               <textarea rows="8" name="message" placeholder="Message" required></textarea>
+               <button type ="submit" class ="hero-btn red-btn">Send Message</button>
+           </form>
+           </div>
+       </div> 
+    </section>
+    
+    <!The footer section serves as the footer of the page and leaves the user with more of a push to make contact>
+    <section class = "footer">
+    <h4>Thank You!</h4>
+        <p>Thank you for visiting this page, if you are interested in contacting me, please visit the contact page.</p>
+        <div class ="icons"> 
+        <i class ="fa fa-facebook"></i>
+        <i class ="fa fa-twitter"></i>
+        <i class ="fa fa-instagram"></i>
+        <i class ="fa fa-linkdein"></i>
+        <P>Made by Jasdeep Singh</P>
+        </div>
+    </section>
+    
+    <!The following section containts javascript that is to be used for the nvaigation links>
+    <script>
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){    
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+<body>

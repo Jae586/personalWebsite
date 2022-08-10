@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    <!The head section is to setup fonts and files for this project>
+    <head>
+	    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	    <title>My Website</title>
+	    <link rel ="stylesheet" href = "webby.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap" rel="stylesheet">
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    
+<body>
+    <!The header section is for every page and is used to set up the links on the top of the page as well as the icons>
+    <section class = "sub-header">
+        <nav>
+            <a href ="webiste.html"><img src = /Users/jasdeepsingh/Desktop/NewIcon.png></a>
+            <div class="nav-links">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href ="homePage.html">HOME</a></li>
+                    <li><a href ="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href ="blogPage.html">BLOG</a></li>
+                    <li><a href ="resumePage.html">RESUME</a></li>
+                    <li><a href ="contactPage.html">CONTACT INFO</a></li>
+                </ul>
+            </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>My Blog</h1>
+    </section>
+
+    <!The blog content section creates the blog posts that I periodically will upload>
+    <section class ="blog-content">
+        <div class ="row">
+            <div class ="blog-left">
+                <img src="/Users/jasdeepsingh/Desktop/fruit and flower_adobe_express.png">
+                <h2>Small Changes Big Results</h2>
+                <p>The further that I get into computer programming and computer science as a whole I have to constantly re-learn topics that I "knew." It is a learning process but I still continue to revaluate and deeply understand the topics that I study. But at times my motivation to study falters.</p>
+                <br>
+                <p>This summer one of the things that I realized was that I didn't properly set myself up in an environment in which I can succeed. And so I began to focus on sleeping, cleaning and reorganizing, this also included buying a new monitor and stand-up desk. </p>
+                <br>
+                <p>Now with these small changes I have found it a lot easier to get my summer studying done. More sleep means more energy and a stand-up desk means that I can stand in a more energized postion rather than sit in an uncomfortable position.</p>
+                <div class ="comment-box">
+                <h3>Leave a comment</h3>
+                    <form class ="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="Submit" class="hero-btn red-btn">POST COMMENT</button>
+                    </form>
+                </div>
+        </div>
+            <div class ="blog-right">
+            <h3>Posts</h3>
+            <div>
+            <span>Small Changes Big Results</span>
+                <span>1</span>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <!The footer section serves as the footer of the page and leaves the user with more of a push to make contact>
+    <section class = "footer">
+    <h4>Thank You!</h4>
+        <p>Thank you for visiting this page, if you are interested in contacting me, please visit the contact page.</p>
+        <div class ="icons"> 
+        <i class ="fa fa-facebook"></i>
+        <i class ="fa fa-twitter"></i>
+        <i class ="fa fa-instagram"></i>
+        <i class ="fa fa-linkdein"></i>
+        <P>Made by Jasdeep Singh</P>
+        </div>
+    </section>
+    
+    <!The following section containts javascript that is to be used for the nvaigation links>
+    <script>
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){    
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+<body>
+</html>

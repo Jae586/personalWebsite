@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    
+    <!The head section is to setup fonts and files for this project>
+    <head>
+	    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	    <title>My Website</title>
+	    <link rel ="stylesheet" href = "webby.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap" rel="stylesheet">
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    
+<body>
+<!The header section is for every page and is used to set up the links on the top of the page as well as the icons>
+    <section class = "sub-header">
+        <nav>
+            <a href ="webiste.html"><img src = "/Users/jasdeepsingh/Desktop/NewIcon.png"></a>
+            <div class="nav-links">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+               
+                <ul>
+                    <li><a href ="homePage.html">HOME</a></li>
+                    <li><a href ="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href ="blogPage.html">BLOG</a></li>
+                    <li><a href ="resumePage.html">RESUME</a></li>
+                    <li><a href ="contactPage.html">CONTACT INFO</a></li>
+                </ul>
+                </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Resume</h1>
+    </section>
+    <! The personal projects section is to let the users know about the projects that I have been working on>
+   <! The personal projects section is to let the users know about the projects that I have been working on>
+    <section class="projects"> 
+        <h1>Personal Projects</h1>
+        <p>Created either out of passion or by the need to learn.</p>
+        <div class ="row">
+            
+            <div class ="projects-col">
+            <h3>This website</h3>
+            <p>This website is one of my projects that I created for the purpose of being able to communicate with others on a larger scale. Within this project I used html, css ,javaScript and PHP.</p>
+            </div>
+            
+            <div class ="projects-col">
+            <h3>Tip fairness app</h3>
+            <p>The tip fairness app is a quick and easy to use android application that allows its users to calculate personal totals of each member of a dinner party. This project uses XML as well as kotlin.</p>
+            </div>
+            
+            <div class ="projects-col">
+            <h3>Discord Music Bot</h3>
+            <p>The discord music bot was created to join discordf voice calls where it can play music selected by the users. This project uses Python.</p>
+            </div>
+            
+         </div>
+    </section>
+    
+    <!The skills section is for the users to be able to see the skills that I believe define me as an engineer>
+    <section class = "skills">
+        <h1>Skills</h1>
+        <p>Three skills that highlight me.</p>
+           
+        <div class ="row">
+            <div class ="skills-col">
+            <img src="/Users/jasdeepsingh/Desktop/leadership copy.jpeg">
+                <h3>Leadership</h3>
+                <p>Assist and guide members of the team in a positive direction.</p>
+            </div>
+            
+            <div class ="skills-col">
+                <img src="/Users/jasdeepsingh/Desktop/communication.png">
+                <h3>Communication</h3>
+                <p>Ability to relay and in-take information to and from others.</p>
+            </div>
+            
+            <div class ="skills-col">
+                <img src="/Users/jasdeepsingh/Desktop/team.webp">
+                <h3>Team Player</h3>
+                <p>Understanding my role within a team and working to fill my part.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!The expereince section lists out my previous employers as well as my participatiuon in a mentorship program.>       
+    <section class = "exp">
+        <h1>Expereince</h1>
+        <p>Previous employment as well as previous mentorships.</p>
+        <div class ="row">
+            <div class = "exp-col">
+            
+            <div>
+            <p>During my 6 week participation of the Microsoft Tech Resiliacny program, I had weekly meetings with peers as well as mentors to discuss how we can better fit in tech based environments.</p>
+                <h3> Microsoft Tech Resiliacny</h3>
+            </div>
+                </div>
+             <div class = "exp-col">
+             
+            <div>
+            <p>At the Haggen Bakery I assist customers frequently, work in a team as well as take detailed orders that must be completed by their deadline.</p>
+                <h3>Haggen Bakery</h3>
+            </div>
+                </div>
+                <div class = "exp-col">
+             
+            <div>
+            <p>At McDonald's I learned how to work in a fast paced environment, work in a team as well as be able to shift gears on a seconds notice.</p>
+                <h3>Mcdonalds</h3>
+            </div>
+                </div>
+        </div>
+    </section>
+    
+    <!The footer section serves as the footer of the page and leaves the user with more of a push to make contact>
+    <section class = "footer">
+    <h4>Thank You!</h4>
+        <p>Thank you for visiting this page, if you are interested in contacting me, please visit the contact page.</p>
+        <div class ="icons"> 
+        <i class ="fa fa-facebook"></i>
+        <i class ="fa fa-twitter"></i>
+        <i class ="fa fa-instagram"></i>
+        <i class ="fa fa-linkdein"></i>
+        <P>Made by Jasdeep Singh</P>
+        </div>
+    </section>
+    
+    <!The following section containts javascript that is to be used for the nvaigation links>
+    <script>
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){    
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+<body>
+</html>

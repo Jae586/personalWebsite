@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+    <!The head section is to setup fonts and files for this project>
+    <head>
+	    <meta name = "viewport" content="with=device-width, initial-scale=1.0">
+	    <title>My Website</title>
+	    <link rel ="stylesheet" href = "webby.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap" rel="stylesheet">
+        <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    </head>
+    
+<body>
+    <!The header section is for every page and is used to set up the links on the top of the page as well as the icons>
+    <section class = "sub-header">
+        <nav>
+            <a href ="webiste.html"><img src="/Users/jasdeepsingh/Desktop/NewIcon.png"></a>
+            <div class="nav-links">
+                <i class="far fa-window-close" onclick="hideMenu()"></i>
+               
+                <ul>
+                    <li><a href ="homePage.html">HOME</a></li>
+                    <li><a href ="aboutMe.html">ABOUT ME</a></li>
+                    <li><a href ="blogPage.html">BLOG</a></li>
+                    <li><a href ="resumePage.html">RESUME</a></li>
+                    <li><a href ="contactPage.html">CONTACT INFO</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>About me</h1>
+    </section>
+    
+    <!The about me section is a short way of letting people know more about me>
+    <section class ="about-me">
+        
+    <div class ="row">
+        
+      <div class ="about-col">
+          <h1>Hi, I am Jasdeep Singh!</h1>
+          <p>Welcome to my website, I am very happy that you could be here.
+          I am an incoming Junior at Western Washington University who is studying computer science. To explore more of this website, click the button below.</p>
+          <a href=""class ="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+        
+        <div class ="about-col">
+            <img src="/Users/jasdeepsingh/Desktop/IMG_0943.PNG">
+        </div>
+    </div>
+    </section>
+    
+    <!The footer section serves as the footer of the page and leaves the user with more of a push to make contact>
+    <section class = "footer">
+    <h4>Thank You!</h4>
+        <p>Thank you for visiting this page, if you are interested in contacting me, please visit the contact page.</p>
+        <div class ="icons"> 
+        <i class ="fa fa-facebook"></i>
+        <i class ="fa fa-twitter"></i>
+        <i class ="fa fa-instagram"></i>
+        <i class ="fa fa-linkdein"></i>
+        <P>Made by Jasdeep Singh</P>
+        </div>
+    </section>
+    
+    <!The following section containts javascript that is to be used for the nvaigation links>
+    <script>
+    var navLinks = document.getElementById("navLinks");
+        function showMenu(){    
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+    
+<body>
